@@ -81,3 +81,20 @@ p{
     font-family:Arial, Helvetica, sans-serif; 
     color:#FFF  
 }
+
+#ww_2105c8afe728e {
+    font-family: Arial;
+    background-color: #E64A19;
+    color: #FFFFFF;
+  }
+  
+  #ww_2105c8afe728e .sl_lpl1 { /* Assuming this class is for the widget content */
+    color: #FFFFFF;
+  }
+  
+  #ww_2105c8afe728e .cl_cloud { color: #FFFFFF; }
+  #ww_2105c8afe728e .cl_persp { color: #FFFFFF; }
+  #ww_2105c8afe728e .cl_sun { color: #FFC107; }
+  #ww_2105c8afe728e .cl_moon { color: #FFC107; }
+  #ww_2105c8afe728e .cl_thund { color: #FFFFFF; }
+  
