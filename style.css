@@ -84,13 +84,11 @@ p{
 
 #ww_2105c8afe728e {
     font-family: Arial;
-    background-color: #E64A19;
-    color: #FFFFFF;
+    background-color: orange;
+    color: white;
   }
   
-  #ww_2105c8afe728e .sl_lpl1 { /* Assuming this class is for the widget content */
-    color: #FFFFFF;
-  }
+  #ww_2105c8afe728e .sl_lpl1 { color: #FFFFFF;}
   
   #ww_2105c8afe728e .cl_cloud { color: #FFFFFF; }
   #ww_2105c8afe728e .cl_persp { color: #FFFFFF; }
