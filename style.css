@@ -1,4 +1,4 @@
-body{
+ body{
     background-image: url("images/whitesails4.jpg");
     background-repeat: no-repeat;
     background-position: center;
@@ -9,14 +9,27 @@ body{
     font-family: 'Times New Roman', Times, serif; 
 }
 
+#wrapper {
+    display: grid;
+    width: 80%;
+    margin: auto;
+         display: grid;
+         grid-template-rows: 130px auto;
+         grid-template-columns: 200px auto;
+    
+    
+   
+  }
+
+
+
 .heading1{
     margin-left: 2%;
     font-size: clamp(1.5rem, 5vw, 3rem); /* Scales responsively */
     color: #FFF;
     font-weight: bold; 
     text-shadow: 2px 2px 5px #03000c;
-    
-  }
+}
 
 .whitesails{
     border-radius:15px 100px 100px 15px;
@@ -95,4 +108,4 @@ p{
   #ww_2105c8afe728e .cl_sun { color: #FFC107; }
   #ww_2105c8afe728e .cl_moon { color: #FFC107; }
   #ww_2105c8afe728e .cl_thund { color: #FFFFFF; }
-  
+   */
