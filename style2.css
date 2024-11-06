@@ -15,7 +15,7 @@ body{
     
     display: grid;
     grid-template-rows: auto auto auto;  /* Header, navigation, main content, footer */
-    grid-template-columns: auto auto 1fr auto;
+    grid-template-columns: .25fr auto .5fr .25fr;
     min-height: 100vh;
     gap: 20px;
     padding: 20px;
@@ -43,17 +43,23 @@ header {
 nav.thumbnails {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-    display: grid;
-    gap: 20px;
+    display: block;
+
     justify-items: center;
+    justify-content: space-around;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     
 }
 
 a img{
+    margin: 20px;
     border-radius:15px ;
-    justify-content: space-around; 
-    align-items: center;
-   
+    /* justify-content: space-around;  */
+    /* align-items: center; */
+    width: 100%; /* Ensures images fill their grid space */
+    height: auto; /* Maintains aspect ratio */
+    max-width: 250px; /* Limits max width for larger screens */
+    
 }
 
 /* Main content styling */
@@ -100,11 +106,18 @@ footer hr {
     margin: 10px auto;
 }
 
-#ww_89485b6e18cb9 {
+#ww_c7c21c47d2bb1 {
+    grid-row: 2;
+    grid-column: 4 / 5;
+    height: 120px;
+}
+
+
+/* #weather {
     grid-row: 2;
     grid-column: 4 / 5;
     height: 220px;
-}
+} */
 
 /* Responsive design */
 @media (max-width: 768px) {
@@ -119,4 +132,87 @@ footer hr {
     .welcome-note p {
         font-size: 1em;
     }
+
+    nav.thumbnails {
+        grid-row: 2 / 3;
+        grid-column: 1 / 5;
+        display: flex; 
+        flex-direction: row;
+		justify-content: space-around;
+        
+    }
+
+    main {
+        grid-row: 3;
+        grid-column: 1 / 5;
+        padding: 20px;
+        /* background-color: #8ea0c5;  */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  Slight shadow for separation
+    }
+
+    #ww_c7c21c47d2bb1 {
+        grid-row: 4;
+        grid-column: 1 / 5;
+        height: 120px;
+    }
+
+    footer {
+        grid-row: 5;
+        grid-column: 1 / 5;
+        text-align: center;
+        padding: 15px;
+        /* background-color: #f0f8ff; */
+        font-size: 1em;
+        color: #FFF;
+    }
+    
+}
+
+/* Responsive design */
+@media (max-width: 992px) {
+    .whitesails h1 {
+        font-size: 1.8em;
+    }
+    
+    .welcome-note h2 {
+        font-size: 1.6em;
+    }
+    
+    .welcome-note p {
+        font-size: 1em;
+    }
+
+    nav.thumbnails {
+        grid-row: 2 / 3;
+        grid-column: 1 / 5;
+        display: flex; 
+        flex-direction: row;
+		justify-content: space-around;
+        
+    }
+
+    main {
+        grid-row: 3;
+        grid-column: 1 / 5;
+        padding: 20px;
+        /* background-color: #8ea0c5;  */
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  Slight shadow for separation
+    }
+
+    #ww_c7c21c47d2bb1 {
+        grid-row: 4;
+        grid-column: 1 / 5;
+        height: 120px;
+    }
+
+    footer {
+        grid-row: 5;
+        grid-column: 1 / 5;
+        text-align: center;
+        padding: 15px;
+        /* background-color: #f0f8ff; */
+        font-size: 1em;
+        color: #FFF;
+    }
+    
 }
