@@ -1,7 +1,7 @@
 /* Style for the grid layout */
 
 body{
-    background-image: url("images/whitesails4.jpg");
+    background-image: url("../images/whitesails4.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -41,7 +41,7 @@ header {
 
 /* Navigation thumbnail grid styling */
 nav.thumbnails {
-    grid-row: 2 / 3;
+    grid-row: 2 / 4;
     grid-column: 1 / 2;
     display: block;
     justify-items: center;
@@ -55,29 +55,33 @@ a img{
     border-radius:15px ;
     /* justify-content: space-around;  */
     /* align-items: center; */
-    width: 100%; /* Ensures images fill their grid space */
+    width: 90%; /* Ensures images fill their grid space */
     height: auto; /* Maintains aspect ratio */
     max-width: 250px; /* Limits max width for larger screens */
     
 }
 
 /* Main content styling */
-main {
-    grid-row: 2;
-    grid-column: 2 / 4;
-    padding: 20px;
-    /* background-color: #8ea0c5;  */
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  Slight shadow for separation
-}
-
 .welcome-note h2 {
     font-size: 2em;
     color: #FFF;
     margin-left: 20%;
     margin-right: 20%;
     text-align: center;
+    opacity: 1;
     
 }
+
+main {
+    grid-row: 2;
+    grid-column: 2 / 4;
+    padding: 20px;
+    background-color: #8ea0c5;
+    opacity: .5;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  Slight shadow for separation
+}
+
+
 
 .welcome-note p {
     font-family:Arial, Helvetica, sans-serif; 
@@ -85,6 +89,7 @@ main {
     color:#FFF;
     font-size: 1.1em;
     line-height: 1.6;
+    
     
 }
 
@@ -111,7 +116,7 @@ footer hr {
     height: 120px;
 }
 
-#tide{
+#tide {
     grid-row: 2;
     grid-column: 4 / 5;
 }
@@ -121,6 +126,40 @@ footer hr {
     grid-column: 4 / 5;
     height: 220px;
 } */
+
+#container {
+    display: grid;
+    grid-template-rows: auto auto; /* Two rows: one for heading, one for form */
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#interest_heading{
+grid-row: 1 ;
+color: white;
+font-family:Arial, Helvetica, sans-serif; 
+    /* text-align: center; */
+}
+
+form { 
+grid-row: 2 ;
+display: grid;
+grid-template-columns: 2fr 1fr; /* Label and input columns */
+    gap: 5px 5px; /* Space between elements */
+    align-items: center; /* Center-align items vertically */
+    width: 350px;
+    height: 150px;
+    margin: 0 auto;
+    background-color: #e97132;
+        color: white;
+       font-family: Arial, sans-serif;
+        width: 350px; padding: 10px; 
+    }
+
+
+
+button[type="submit"] { margin-left: 110px; }
 
 /* Responsive design */
 @media (max-width: 768px) {
@@ -145,7 +184,7 @@ footer hr {
     }
 
     a img{
-        margin: 0;
+        margin: 10px;
         
     }
 
@@ -196,6 +235,7 @@ footer hr {
         display: flex; 
         flex-direction: row;
 		justify-content: space-around;
+       
     
         
     }
@@ -224,4 +264,14 @@ footer hr {
         color: #FFF;
     }
     
+    #interest_heading{
+      
+        grid-column: 1 / 5;
+    }
+
+    form {
+        grid-row: 4 ;
+        grid-column: 1 / 5;
+
+    }
 }

@@ -2,22 +2,89 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewportjhgdfsjgd" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>White Sails Cruising</title>
+    <link href="css/style2.css" rel="stylesheet">
 </head>
+<style>
+    
+    </style>
 <body>
-    <main>
-        <div class="welcome-note">
-            <h2 id="greeting">Welcome to White Sails Cruising!</h2>
-            <p>Whether you're a seasoned sailor or just starting your nautical journey, 
-            we're here to bring the thrill of the open sea to life. Join a crew and experience 
-            the teamwork and camaraderie of sailing, embark on one of our hands-on sailing 
-            courses to master the art of navigation, or take part in our exciting upcoming 
-            events that promise unforgettable adventures.</p>
-            <p>At White Sails Cruising, we believe in the freedom, beauty, and challenge 
-            that sailing offers, and we're passionate about sharing that adventure with you.
-            The horizon is calling—set sail with us today!</p>
+    <div id="wrapper">
+        
+        <header>
+            <div class="whitesails">
+                <h1 class="heading1">
+                    White Sails Cruising <br>
+                    <span class="h1-second">Begin your sailing adventure today</span>
+                </h1>
+            </div>
+        </header>
+        
+        <nav class="thumbnails">
+            <a href="join-a-crew.html">
+                <img src="./images/crew.png" alt="Crew sailing">
+            </a>
+            <a href="https://www.google.com">
+                <img src="./images/course.png" alt="Sailing courses">
+            </a>
+            <a href="https://www.google.com">
+                <img src="./images/event.png" alt="Sailing events">
+            </a>
+            <!--
+            <a href="https://www.google.com">
+                <img src="./images/event.png" alt="Tides and weather">
+            </a>
+            -->
+        </nav>
+        
+        <main>
+            <div class="welcome-note">
+                <h2 id="greeting">Are you ready to join a race crew and elevate your sailing skills?</h2>
+                <p>
+                    Whether you're a seasoned sailor or just beginning your nautical journey, one of the best ways to master 
+                    the art of sailing is by joining a crew in our cruisers racing series. Experience firsthand the thrill, 
+                    strategy, and teamwork that only a competitive sailing environment can offer. By working together with 
+                    skilled sailors, you’ll learn more in a single race than you would in weeks of solo practice.
+                </p>
+                <p>
+                    At White Sails Cruising, we believe that the open sea holds something for everyone. Join us for hands-on 
+                    learning, camaraderie, and unforgettable moments. The horizon awaits—come sail with us!
+                </p>
+            </div>
+
+        </main>
+        <div id="container">
+        <h2 id="interest_heading">Fill in your details and we will match you with a suitable crew!</h2>
+        <form action="submit-form.html" method="post"> <!-- Set 'action' to your desired server endpoint -->
+               
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Full name" required>
+                
+                <label for="contact">Your E-mail:</label>
+                    <input type="email" id="contact" name="contact" placeholder="Your email address" required>
+
+                <label for="experience">Experience:</label>
+                <select id="experience" name="experience" required>
+                    <option value="">--Select Experience Level--</option>
+                    <option value="beginner">Landlubber (New to the Seas) </option>
+                    <option value="intermediate">Deckhand (Knows Port from Starboard)</option>
+                    <option value="advanced">First Mate (Confident and Capable)</option>
+                    <option value="professional">Old Salt (Master of the Seven Seas)</option>
+                </select>
+                <br>
+                <br>
+                
+                <button type="submit">Submit</button>
+            
+            
+            </form>
         </div>
-    </main>
+        <footer> 
+            <hr>
+            <p>&copy; 2024 White Sails Cruising</p>
+        </footer>
+
+    </div>
 </body>
 </html>
