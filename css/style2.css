@@ -1,7 +1,18 @@
 /* Style for the grid layout */
 
-body{
+.homebody{
     background-image: url("../images/whitesails4.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-left:auto;   
+    margin-right: auto;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+.joincrewbody{
+    background-image: url("../images/whitesails.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -14,8 +25,8 @@ body{
 #wrapper {
     
     display: grid;
-    grid-template-rows: auto auto auto auto 20% auto;  /* Header, navigation, main content, footer */
-    grid-template-columns: .20fr .3fr .3fr .20fr;
+    grid-template-rows: auto auto auto 20% auto auto;  /* Header, navigation, main content, footer */
+    grid-template-columns: 20% 55% 20% ;
     min-height: 100vh;
     gap: 20px;
     padding: 20px;
@@ -24,7 +35,7 @@ body{
 /* Header styling */
 header {
     grid-row: 1;
-    grid-column: 1 / 5;
+    grid-column: 1 / 4;
     border-radius:15px 100px 100px 15px;
     /* opacity: 0.8;  */
     text-align: center;
@@ -39,14 +50,16 @@ header {
     
 }
 
-.circle_image {
-    grid-row: 3;
-    grid-column: 3;
+.crew_image {
+     grid-row: 2;
+    grid-column: 3 ; 
+    height: 500px;
+    background-position: center;
 }
 
 #goosewing {
-    width: 80%;         /* Set the width */
-    height: auto;       /* Set the height to be equal to width */
+    width: auto;         /* Set the width */
+    height: 50%;       /* Set the height to be equal to width */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -56,7 +69,7 @@ header {
 
 /* Navigation thumbnail grid styling */
 nav.thumbnails {
-    grid-row: 2 / 4;
+    grid-row: 2 ;
     grid-column: 1 / 2;
     display: block;
     justify-items: center;
@@ -68,16 +81,15 @@ nav.thumbnails {
 a img{
     margin: 20px;
     border-radius:15px ;
-    /* justify-content: space-around;  */
-    /* align-items: center; */
-    width: 90%; /* Ensures images fill their grid space */
-    height: auto; /* Maintains aspect ratio */
-    max-width: 250px; /* Limits max width for larger screens */
+    width: 90%; 
+    height: auto; 
+    max-width: 250px; 
     
 }
 
 /* Main content styling */
 .welcome-note h2 {
+   
     font-size: 2em;
     color: #FFF;
     margin-left: 20%;
@@ -87,26 +99,27 @@ a img{
     
 }
 
-#main_bkg{
+/* #main_bkg{
     grid-row: 2;
     grid-column: 2 / 4;
-    /* position: relative; */
+    position: relative;
     border-radius:15px;
-    /* background-image: url("../images/whitesails2.jpg") ;
-    background-size: cover;         
-    background-position: center;    
-    background-repeat: no-repeat; */
     background-image: linear-gradient(#e97132, #384048);
     height: 100%;
     opacity: 1;
     z-index: 1;
-}
+} */
 main {
     grid-row: 2;
-    grid-column: 2 / 4;
+    grid-column: 2 ;
     padding: 20px;
-    height: 80%;
-    z-index: 2
+    margin-left: 40px;
+    margin-right: 40px;
+    
+    height: 60%; 
+    background-image: linear-gradient(#e97132, #384048);
+    border-radius:15px;
+  
     
 }
 
@@ -126,7 +139,7 @@ main {
 /* Footer styling */
 footer {
     grid-row: 4;
-    grid-column: 1 / 5;
+    grid-column: 1 / 4;
     text-align: center;
     padding: 15px;
     /* background-color: #f0f8ff; */
@@ -142,7 +155,7 @@ footer hr {
 
 #ww_c7c21c47d2bb1 {
     grid-row: 2;
-    grid-column: 4 / 5;
+    grid-column: 3/ 4;
     height: 120px;
 }
 
@@ -159,8 +172,13 @@ footer hr {
 
 
 .overlap {
-    grid-row: 3;
-    grid-column: 2;
+    display: grid; 
+    justify-items: center;
+    align-items: center;
+    grid-row: 2;
+    grid-column: 3;
+    margin-top: 50px;
+   
 }
 
 #container {
@@ -183,13 +201,12 @@ margin: 25px;
 form { 
 grid-row: 2 ;
 display: grid;
-grid-template-columns: 2fr 1fr; /* Label and input columns */
-    gap: 5px 5px; /* Space between elements */
-    align-items: center; /* Center-align items vertically */
+grid-template-columns: 2fr 1fr; 
+    gap: 5px 5px; 
+    align-items: center; 
     width: 350px;
     height: 150px;
     margin: 0 auto;
-    /* background-color: #e97132; */
     background-image: linear-gradient(#e97132, #384048);
     border-radius: 5%;
         color: white;
@@ -199,7 +216,9 @@ grid-template-columns: 2fr 1fr; /* Label and input columns */
 
 
 
-button[type="submit"] { margin-left: 110px; }
+button[type="submit"] {
+     margin-left: 110px; 
+    }
 
 
 @media (max-width: 821px) {
@@ -217,7 +236,7 @@ button[type="submit"] { margin-left: 110px; }
 
     nav.thumbnails {
         grid-row: 2 / 3;
-        grid-column: 1 / 5;
+        grid-column: 1 / 4;
         display: inline; 
         flex-direction: row;
 		justify-content: space-around;  
@@ -230,27 +249,31 @@ button[type="submit"] { margin-left: 110px; }
 
     main {
         grid-row: 3;
-        grid-column: 1 / 5;
+        grid-column: 1 / 4;
+        margin-left: 40px;
+        margin-right: 40px;
         padding: 20px;
-        /* background-color: #8ea0c5;  */
+        height: 100%; 
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  Slight shadow for separation
     }
 
     #ww_c7c21c47d2bb1 {
         grid-row: 4;
-        grid-column: 1 / 5;
-        height: 120px;
+        grid-column: 1 / 4;
+
+        
     }
 
 
-    footer {
-        grid-row: 5;
-        grid-column: 1 / 5;
+    .joincrewft {
+        grid-row: ;
+        grid-column: 1 / 4;
         text-align: center;
         padding: 15px;
         /* background-color: #f0f8ff; */
         font-size: 1em;
         color: #FFF;
+        
     }
 
     .overlap {
@@ -258,9 +281,10 @@ button[type="submit"] { margin-left: 110px; }
         grid-column: 1 / 5;
     }
 
-    .circle_image {
-        grid-row: 5;
+    .crew_image {
+        grid-row: 4;
         grid-column: 2/ 3;
+        
     }
     
 }
@@ -283,7 +307,7 @@ button[type="submit"] { margin-left: 110px; }
 
     nav.thumbnails {
         grid-row: 2 / 3;
-        grid-column: 1 / 5;
+        grid-column: 1 / 4;
         display: flex; 
         flex-direction: row;
 		justify-content: space-around;
@@ -294,19 +318,26 @@ button[type="submit"] { margin-left: 110px; }
 
     main {
         grid-row: 3;
-        grid-column: 1 / 5;
+        grid-column: 1 / 4;
+        height: 100%; 
        
     }
 
     #ww_c7c21c47d2bb1 {
         grid-row: 4;
-        grid-column: 1 / 5;
-        height: 120px;
+        grid-column: 1 / 4;
+        /*height: 120px; */
+        top: 40px;
+        
+        
+
+        
+        
     }
 
     footer {
         grid-row: 6;
-        grid-column: 1 / 5;
+        grid-column: 1 / 4;
         text-align: center;
         padding: 15px;
         font-size: 1em;
@@ -315,27 +346,50 @@ button[type="submit"] { margin-left: 110px; }
     
     #interest_heading{
       
-        grid-column: 1 -1;
+        grid-column: 1 ;
     }
 
-    form {
-        grid-row: 2;
-        grid-column: 1 -1;
 
-    }
 
-    #main_bkg{
-        grid-row: 3;
-        grid-column: 1 / 5;
-    }
 
     .overlap {
+        display: block;
+        justify-items: center;
+        justify-content: space-around;
         grid-row: 4;
-        grid-column: 1 / 3;
+        grid-column: 1/3 ; 
+        margin-left: 250px;
+        /* margin-left: 40px; */
+        margin-right: 40px;
+        
     }
 
-    .circle_image {
-        grid-row: 4;
-        grid-column: 3 / 5;
+    .crew_image {
+        display: grid;
+       
+        /* justify-items: center; */
+        /* align-items: center;  */
+        grid-row: 5 ;
+        grid-column: 2;
+        padding: 50px;
+        
+        
+        
+        
+   
+        
+    } 
+
+    #goosewing {
+        display: grid; 
+        justify-items: center; /* Center image horizontally within the grid */
+        align-items: center; Center image vertically within the grid
+        grid-row: 3;
+        grid-column: 4;
+        border-radius: 15%;
+        margin-bottom: 200px;
+        max-width: 100%;
+        min-width: 250px; 
+        padding: 10px; /* Optional: Add padding around the image */
     }
 }
