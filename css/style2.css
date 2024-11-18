@@ -87,6 +87,11 @@ a img{
     
 }
 
+nav.thumbnails a img:hover {
+    transform: scale(1.2); 
+    
+}
+
 /* Main content styling */
 .welcome-note h2 {
    
