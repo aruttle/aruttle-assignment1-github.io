@@ -55,6 +55,22 @@
     font-family: 'Times New Roman', Times, serif; 
 }
 
+.whitesails {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    position: relative;
+}
+
+.logo {
+    margin-right: 15px; 
+    width: 150px; 
+    height: auto; 
+}
+
+.heading1 {
+    position: relative; 
+}
 
 .courses-main a {
     color: white; 
@@ -90,8 +106,6 @@ header {
     padding: 20px;
     background-image: linear-gradient(#e97132, #384048);  /* Light blue background for header */
     margin-bottom: 30px;
-	padding: 1px;
-    
 }
 
 .crew_image {
@@ -163,8 +177,6 @@ nav.thumbnails a img:hover {
     height: 60%; 
     background-image: linear-gradient(#e97132, #384048);
     border-radius:15px;
-  
-    
 }
 
 
@@ -175,9 +187,17 @@ nav.thumbnails a img:hover {
     color:#FFF;
     font-size: 1.1em;
     line-height: 1.6;
+}
 
-    
-    
+.welcome-note a {
+    color: white; 
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.welcome-note a:hover {
+    color: black; 
+    text-decoration:none;
 }
 
 
@@ -239,13 +259,12 @@ footer hr {
     grid-column: 3;
     display: grid;
     flex-direction: column; 
-    /* justify-content: center; */
     align-items: center; 
     gap: 20px; 
 }
 
 .widget-container > div {
-    width: 100%; /* Ensure widgets occupy their space properly */
+    width: 100%;
 }
 
 
@@ -285,16 +304,19 @@ grid-template-columns: 2fr 1fr;
     }
 
 
-.gallery-container {
-    
-    }
 
-#gallery { 
-    display: flex; 
-    flex-wrap: wrap; 
-    
 
-     
+.gallery { 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 20px; 
+    padding: 20px; 
+    justify-items: center; 
+    align-items: center;
+}
+
+.gallery img:hover {
+    transform: scale(1.5);
 }
 
 .gallery-main {
@@ -303,10 +325,8 @@ grid-template-columns: 2fr 1fr;
     color: white;
     font-size: clamp(1.5rem, 1.5em, 3rem); 
     padding-left: 5%;
-
-    
-    
-
+    justify-content: center;
+    align-items: center;
 }
 
 #gallery-heading {
@@ -385,7 +405,6 @@ caption { font-family: Verdana, sans-serif;
       font-size: 1.2em;
       padding-bottom: 0.5em; 
 }
-.altrow { background-color: #eaeaea; }
 
 
 
