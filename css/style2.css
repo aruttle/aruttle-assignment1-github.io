@@ -44,6 +44,28 @@
     font-family: 'Times New Roman', Times, serif; 
 }
 
+.courses-body{
+    background-image: url("../images/gallery/image36.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-left:auto;   
+    margin-right: auto;
+    font-family: 'Times New Roman', Times, serif; 
+}
+
+
+.courses-main a {
+    color: white; 
+    text-decoration: underline;
+}
+
+.courses-main a:hover {
+    color: lightgray; 
+    text-decoration:none;
+}
+
 #wrapper {
     
     display: grid;
@@ -313,6 +335,21 @@ button[type="submit"] {
     text-align:Center; 
     font-weight: bold; 
     text-shadow: 2px 2px 5px #03000c;
+}
+
+#courses-heading {
+    text-align:Center; 
+    font-weight: bold; 
+    text-shadow: 2px 2px 5px #03000c;
+}
+
+.courses-main {
+    grid-column: 2/4 ;
+    grid-row: 2/4 ;
+    color: white;
+    font-size: clamp(1.5rem, 1.5em, 3rem); 
+    padding: 5%;
+    padding-top: 0;
 }
 
 table { margin: auto;
