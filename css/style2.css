@@ -414,11 +414,7 @@ caption { font-family: Verdana, sans-serif;
         margin-left: 0;
         display: flex; 
         flex-direction: row;
-		justify-content: space-around;
-       
-       
-    
-        
+		justify-content: space-around; 
     }
 
 
@@ -481,19 +477,19 @@ caption { font-family: Verdana, sans-serif;
     }
 
     .weather-widget {
-    font-family: Arial, sans-serif; /* Corresponds to "font":"Arial" */
-    background-image: url('path/to/your/background-image.jpg'); /* Set a custom background */
-    color: #FFFFFF; /* Corresponds to "cl_font":"#FFFFFF" */
-}
+        font-family: Arial, sans-serif; /* Corresponds to "font":"Arial" */
+        background-image: url('path/to/your/background-image.jpg'); /* Set a custom background */
+        color: #FFFFFF; /* Corresponds to "cl_font":"#FFFFFF" */
+    }
 
-.weather-widget a {
-    text-decoration: none;
-    color: #FFFFFF; /* Link color */
-}
+    .weather-widget a {
+        text-decoration: none;
+        color: #FFFFFF; /* Link color */
+    }
 
-.weather-widget a:hover {
-    color: #FFC107; /* Corresponds to hover color, e.g., the "sun" color in your widget */
-}
+    .weather-widget a:hover {
+        color: #FFC107; /* Corresponds to hover color, e.g., the "sun" color in your widget */
+    }
 
 
     #ww_c7c21c47d2bb1 {
@@ -511,6 +507,14 @@ caption { font-family: Verdana, sans-serif;
         grid-row: 3 ;
         color: white;
         font-size: clamp(1.5rem, 1.5em, 3rem); 
+    }
+
+    .courses-main {
+        grid-column: 1 / 4 ;
+        grid-row: 3 ;
+        color: white;
+        font-size: clamp(1.5rem, 1.5em, 3rem); 
+        padding: 0;
     }
 
     td { padding: 0.5em;
@@ -610,5 +614,17 @@ caption { font-family: Verdana, sans-serif;
     footer {
         margin-top: 100px;
     }
+
+    td { padding: 0.5em;
+         
+        font-size: small;
+         
+   }
+
+   th { padding: 0.5em;
+         
+    font-size: small;
+     
+}
     
 }
