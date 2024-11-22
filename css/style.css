@@ -368,8 +368,8 @@ button[type="submit"] {
 }
 
 table { margin: auto;
-    border: 5px solid #000066;
-    width: 100%; 
+    border: 5px solid black;
+    width: 90%; 
     background-image: linear-gradient(#e97132, #384048);
     border-spacing: 0;
     color: #FFF;
