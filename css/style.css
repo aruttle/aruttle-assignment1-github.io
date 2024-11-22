@@ -155,7 +155,7 @@ nav.thumbnails a img:hover {
 
 
 .welcome-note h2 {
-    font-size: 2em;
+    font-size: 1.6em;
     color: #FFF;
     margin-left: 20%;
     margin-right: 20%;
@@ -172,7 +172,7 @@ nav.thumbnails a img:hover {
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 5%;
-    height: 60%; 
+    height: 65%; 
     background-image: linear-gradient(#e97132, #384048);
     border-radius:15px;
 }
@@ -271,6 +271,7 @@ footer hr {
     gap: 10px;
     justify-content: center;
     align-items: center;
+    margin-left: 15%;
 }
 
 
@@ -416,11 +417,7 @@ caption { font-family: Verdana, sans-serif;
     }
 
 
-    #nav-container {
-        grid-row: 2 ;
-        grid-column: 1 / 4;
-    }
-
+    
     nav.thumbnails {
         grid-row: 2 ;
         grid-column: 1 / 4;
@@ -636,6 +633,15 @@ caption { font-family: Verdana, sans-serif;
          
     font-size: small;
      
+}
+
+nav.thumbnails {
+    grid-row: 2 ;
+    grid-column: 1 / 4;
+    margin-left: 0;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around; 
 }
     
 }
