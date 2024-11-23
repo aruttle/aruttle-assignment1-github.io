@@ -59,4 +59,7 @@ Click [here](./docs/wireframes.pdf)
     The weather widget used is from weatherwidget.org: https://weatherwidget.org
     The tide widget used is from Tide Times: https://www.tidetimes.org.uk
 
+### Logo
+    The logo was created in PowerPoint
+
 
