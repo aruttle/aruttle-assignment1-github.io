@@ -291,7 +291,7 @@ grid-template-columns: 2fr 1fr;
     width: 350px;
     height: 150px;
     margin: 0 auto;
-    background-image: linear-gradient(#e97132, #384048);
+    background-image: linear-gradient(#e97132, #384048); /*To demonstrate using linear gradients as background images*/
     border-radius: 5%;
         color: white;
        font-family: Arial, sans-serif;
@@ -303,7 +303,7 @@ grid-template-columns: 2fr 1fr;
 
 .gallery { 
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* I used ChatGBT here to help to make sure images rendered correctly*/
     gap: 20px; 
     padding: 20px; 
     justify-items: center; 
@@ -318,7 +318,7 @@ grid-template-columns: 2fr 1fr;
     grid-column: 2 / 4;
     grid-row: 2 / 4;
     color: white;
-    font-size: clamp(1.5rem, 1.5em, 3rem); 
+    font-size: clamp(1.5rem, 1.5em, 3rem); /* I used ChatGBT here to help make font size dynamic*/
     padding-left: 5%;
     justify-content: center;
     align-items: center;
@@ -341,7 +341,7 @@ button[type="submit"] {
     grid-column: 2/4 ;
     grid-row: 2/4 ;
     color: white;
-    font-size: clamp(1.5rem, 1.5em, 3rem); 
+    font-size: clamp(1.5rem, 1.5em, 3rem); /* I used ChatGBT here to help make font size dynamic*/
     padding: 5%;
     padding-top: 0;
 }
@@ -362,19 +362,18 @@ button[type="submit"] {
     grid-column: 2/4 ;
     grid-row: 2/4 ;
     color: white;
-    font-size: clamp(1.5rem, 1.5em, 3rem); 
+    font-size: clamp(1.5rem, 1.5em, 3rem); /* I used ChatGBT here to help make font size dynamic*/
     padding: 5%;
     padding-top: 0;
 }
 
-table { margin: auto;
+table { 
+    margin: auto;
     border: 5px solid black;
     width: 90%; 
-    background-image: linear-gradient(#e97132, #384048);
+    background-image: linear-gradient(#e97132, #384048);/*To demonstrate using linear gradients as background images*/
     border-spacing: 0;
-    color: #FFF;
-    
-    
+    color: #FFF; 
 }
 
 td { padding: 0.5em;
@@ -395,10 +394,11 @@ th {
 }
 
 
-caption { font-family: Verdana, sans-serif;
-      font-weight: bold;
-      font-size: 1.2em;
-      padding-bottom: 0.5em; 
+caption { 
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding-bottom: 0.5em; 
 }
 
 
@@ -516,14 +516,14 @@ caption { font-family: Verdana, sans-serif;
         grid-column: 1 / 4 ;
         grid-row: 3 ;
         color: white;
-        font-size: clamp(1.5rem, 1.5em, 3rem); 
+        font-size: clamp(1.5rem, 1.5em, 3rem); /*To demonstrate using linear gradients as background images*/
     }
 
     .courses-main {
         grid-column: 1 / 4 ;
         grid-row: 3 ;
         color: white;
-        font-size: clamp(1.5rem, 1.5em, 3rem); 
+        font-size: clamp(1.5rem, 1.5em, 3rem); /*To demonstrate using linear gradients as background images*/
         padding: 0;
     }
 
@@ -573,7 +573,6 @@ caption { font-family: Verdana, sans-serif;
         margin-right: 40px;
         padding: 20px;
         height: 100%; 
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);  Slight shadow for separation
     }
 
     .video-container{
